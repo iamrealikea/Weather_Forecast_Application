@@ -32,9 +32,29 @@ val Typography = Typography(
         fontWeight = FontWeight.Medium,
         fontSize = 20.sp
     ),
+    headlineMedium = TextStyle(
+        fontFamily = IBMPlexSans,
+        fontWeight = FontWeight.Normal,
+        fontSize = 18.sp
+    ),
     headlineSmall = TextStyle(
         fontFamily = IBMPlexSans,
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp
+    ),
+    titleLarge = TextStyle(
+        fontFamily = IBMPlexMono,
+        fontWeight = FontWeight.Bold,
+        fontSize = 36.sp
+    ),
+    titleMedium = TextStyle(
+        fontFamily = IBMPlexMono,
+        fontWeight = FontWeight.Bold,
+        fontSize = 32.sp
+    ),
+    bodyMedium = TextStyle(
+        fontFamily = IBMPlexSans,
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp
     )
 )

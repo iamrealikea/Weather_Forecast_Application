@@ -2,8 +2,13 @@
     <string name="app_name">Weather Forecast</string>
     <string name="temp">36°</string>
     <string name="place_location">Bangkok</string>
+    <string name="uv_number">11</string>
+    <string name="uv_level">Extreme</string>
     <string name="temp_1200">36°</string>
     <string name="temp_1300">37°</string>
     <string name="humidity_1200">63%</string>
     <string name="humidity_1300">63%</string>
+    <string name="uv_index_title">UV Index</string>
+    <string name="humidity_title">Humidity</string>
+    <string name="humidity_percentage">63 %</string>
 </resources>
