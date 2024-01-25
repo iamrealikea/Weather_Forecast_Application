@@ -20,12 +20,12 @@ val Typography = Typography(
     displayLarge = TextStyle(
         fontFamily = IBMPlexMono,
         fontWeight = FontWeight.Bold,
-        fontSize = 72.sp
+        fontSize = 60.sp
     ),
     displayMedium = TextStyle(
         fontFamily = IBMPlexMono,
         fontWeight = FontWeight.Bold,
-        fontSize = 42.sp
+        fontSize = 32.sp
     ),
     displaySmall = TextStyle(
         fontFamily = IBMPlexSans,
@@ -56,5 +56,10 @@ val Typography = Typography(
         fontFamily = IBMPlexSans,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp
+    ),
+    labelMedium = TextStyle(
+        fontFamily = IBMPlexMono,
+        fontWeight = FontWeight.Medium,
+        fontSize = 24.sp
     )
 )

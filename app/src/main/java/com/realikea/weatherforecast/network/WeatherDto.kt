@@ -6,6 +6,8 @@ data class WeatherDto(
     @field:Json(name = "location")
     val locationData: LocationDataDto,
     @field:Json(name = "current")
-    val weatherData: WeatherDataDto
+    val weatherData: WeatherDataDto,
+    /*@field:Json(name = "forecast")
+    val forecastData:*/
 
 )

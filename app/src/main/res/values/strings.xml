@@ -11,4 +11,10 @@
     <string name="uv_index_title">UV Index</string>
     <string name="humidity_title">Humidity</string>
     <string name="humidity_percentage">63 %</string>
+    <string name="air_quality">Air Quality</string>
+    <string name="close">Close</string>
+    <string name="pm2_5">PM2.5</string>
+    <string name="wind">Wind</string>
+    <string name="km_hr">km/hr</string>
+    <string name="visibility">Visibility</string>
 </resources>

@@ -1,12 +1,24 @@
 package com.realikea.weatherforecast.model.weather
 
-import java.time.LocalDateTime
+import com.realikea.weatherforecast.model.weather.subtype.UsEpaIndex
+import com.realikea.weatherforecast.model.weather.subtype.UvIndexType
+import com.realikea.weatherforecast.model.weather.subtype.WindDirType
+import com.realikea.weatherforecast.network.AirQuality
 
 data class WeatherData(
-    val time: LocalDateTime,
     val temperatureCelsius: Double,
-    val last_updated: String,
+    val lastUpdated: String,
     val isDay: Int,
     val code: Int,
-    val weatherType: WeatherType
-)
+    val weatherType: WeatherType,
+    val feelslikeCelsius: Double,
+    val humidity: Int,
+    val uv: Double,
+    val uvIndex: UvIndexType,
+    val usEpaIndex: Int,
+    val usEpaIndexType: UsEpaIndex,
+    val airQualityData: AirQualityData,
+    val windKph: Double,
+    val windDirType: WindDirType,
+    val visKM: Double
+    )
