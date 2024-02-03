@@ -1,20 +1,37 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
-    <string name="temp">36°</string>
-    <string name="place_location">Bangkok</string>
-    <string name="uv_number">11</string>
-    <string name="uv_level">Extreme</string>
-    <string name="temp_1200">36°</string>
-    <string name="temp_1300">37°</string>
-    <string name="humidity_1200">63%</string>
-    <string name="humidity_1300">63%</string>
     <string name="uv_index_title">UV Index</string>
     <string name="humidity_title">Humidity</string>
-    <string name="humidity_percentage">63 %</string>
     <string name="air_quality">Air Quality</string>
     <string name="close">Close</string>
-    <string name="pm2_5">PM2.5</string>
+    <string name="pm2_5" translatable="false">PM2.5</string>
     <string name="wind">Wind</string>
     <string name="km_hr">km/hr</string>
     <string name="visibility">Visibility</string>
+    <string name="good">Good</string>
+    <string name="moderate">Moderate</string>
+    <string name="unhealthy_for_sensitive_group">Unhealthy for sensitive group</string>
+    <string name="unhealthy">Unhealthy</string>
+    <string name="very_unhealthy">Very Unhealthy</string>
+    <string name="hazardous">Hazardous</string>
+    <string name="feel_like">Feel Like</string>
+    <string name="km">km</string>
+    <string name="north">North</string>
+    <string name="north_northeast">North-Northeast</string>
+    <string name="northeast">Northeast</string>
+    <string name="east_northeast">East-Northeast</string>
+    <string name="east">East</string>
+    <string name="east_southeast">East-Southeast</string>
+    <string name="southeast">Southeast</string>
+    <string name="south_southeast">South-Southeast</string>
+    <string name="south">South</string>
+    <string name="south_southwest">South-Southwest</string>
+    <string name="southwest">Southwest</string>
+    <string name="west_southwest">West-Southwest</string>
+    <string name="west">West</string>
+    <string name="west_northwest">West-Northwest</string>
+    <string name="northwest">Northwest</string>
+    <string name="north_northwest">North-Northwest</string>
+    <string name="error" translatable="false">Error</string>
+    <string name="from_the_dir">From the</string>
 </resources>

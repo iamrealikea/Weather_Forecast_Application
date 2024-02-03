@@ -9,6 +9,7 @@ import com.realikea.weatherforecast.domain.repository.WeatherRepository
 import com.realikea.weatherforecast.location.LocationTracker
 import com.realikea.weatherforecast.domain.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

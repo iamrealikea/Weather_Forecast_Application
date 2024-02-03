@@ -1,37 +1,47 @@
 package com.realikea.weatherforecast.model.weather.subtype
 
+import androidx.annotation.DrawableRes
+import com.realikea.weatherforecast.R
+
 sealed class UvIndexType(
     val uvIndexDesc: String,
-    val recommendDesc: String
+    val recommendDesc: String,
+    @DrawableRes val colorIndex: Int
 ) {
     object Low : UvIndexType(
         uvIndexDesc = "Low",
         recommendDesc = "You can safely enjoy being outside! " +
-                "Wear sunglasses on bright days."
+                "Wear sunglasses on bright days.",
+        colorIndex = R.drawable.low_uv
     )
     object Moderate : UvIndexType(
         uvIndexDesc = "Moderate",
         recommendDesc = "Stay in shade near midday when the sun is strongest. " +
-                "If outdoors, wear sun-protective clothing, a wide-brimmed hat, and UV-blocking sunglasses."
+                "If outdoors, wear sun-protective clothing, a wide-brimmed hat, and UV-blocking sunglasses.",
+        colorIndex = R.drawable.moderate_uv
     )
     object High : UvIndexType(
         uvIndexDesc = "High",
         recommendDesc = "Reduce time in the sun between 10 a.m. and 4 p.m. " +
-                "If outdoors, seek shade and wear sun-protective clothing, a wide-brimmed hat, and UV-blocking sunglasses."
+                "If outdoors, seek shade and wear sun-protective clothing, a wide-brimmed hat, and UV-blocking sunglasses.",
+        colorIndex = R.drawable.high_uv
     )
     object VeryHigh : UvIndexType(
         uvIndexDesc = "Very High",
         recommendDesc = "Minimize sun exposure between 10 a.m. and 4 p.m. " +
-                "If outdoors, seek shade and wear sun-protective clothing, a wide-brimmed hat, and UV-blocking sunglasses."
+                "If outdoors, seek shade and wear sun-protective clothing, a wide-brimmed hat, and UV-blocking sunglasses.",
+        colorIndex = R.drawable.very_high_uv
     )
     object Extreme : UvIndexType(
         uvIndexDesc = "Extreme",
         recommendDesc = "Try to avoid sun exposure between 10 a.m. and 4 p.m. " +
-                "If outdoors, seek shade and wear sun-protective clothing, a wide-brimmed hat, and UV-blocking sunglasses."
+                "If outdoors, seek shade and wear sun-protective clothing, a wide-brimmed hat, and UV-blocking sunglasses.",
+        colorIndex = R.drawable.very_high_uv
     )
     object Unknow : UvIndexType(
         uvIndexDesc = "Null",
-        recommendDesc = "Null"
+        recommendDesc = "Null",
+        colorIndex = R.drawable.low_uv
     )
 
     companion object {

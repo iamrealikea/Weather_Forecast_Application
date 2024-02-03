@@ -1,25 +1,28 @@
 package com.realikea.weatherforecast.model.weather.subtype
 
+import androidx.annotation.StringRes
+import com.realikea.weatherforecast.R
+
 sealed class UsEpaIndex(
-    val indexDesc: String
+    @StringRes val indexDesc: Int
 ) {
     object Good: UsEpaIndex(
-        indexDesc = "Good"
+        indexDesc = R.string.good
     )
     object Moderate: UsEpaIndex(
-        indexDesc = "Moderate"
+        indexDesc = R.string.moderate
     )
     object UnhealthySensitive: UsEpaIndex(
-        indexDesc = "Unhealthy for sensitive group"
+        indexDesc = R.string.unhealthy_for_sensitive_group
     )
     object Unhealthy: UsEpaIndex(
-        indexDesc = "Unhealthy"
+        indexDesc = R.string.unhealthy
     )
     object VeryUnhealthy: UsEpaIndex(
-        indexDesc = "Very Unhealthy"
+        indexDesc = R.string.very_unhealthy
     )
     object Hazardous: UsEpaIndex(
-        indexDesc = "Hazardous"
+        indexDesc = R.string.hazardous
     )
 
     companion object {

@@ -49,6 +49,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.realikea.weatherforecast.ui.DataScreen
+import com.realikea.weatherforecast.ui.WeatherApp
 //import com.realikea.weatherforecast.ui.DataScreen
 import com.realikea.weatherforecast.ui.WeatherViewModel
 import com.realikea.weatherforecast.ui.theme.WeatherForecastTheme
@@ -74,13 +75,15 @@ class MainActivity : ComponentActivity() {
                 Manifest.permission.ACCESS_COARSE_LOCATION,
             )
         )
+
         setContent {
             WeatherForecastTheme {
                 Box(
                     modifier = Modifier
+                        .background(color = MaterialTheme.colorScheme.background)
                         .fillMaxSize()
                 ) {
-                    DataScreen(state = viewModel.state)
+                    WeatherApp(state = viewModel.state, modifier = Modifier, viewModel = viewModel)
                     if (viewModel.state.isLoading) {
                         CircularProgressIndicator(
                             modifier = Modifier.align(Alignment.Center)
@@ -132,6 +135,7 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+
 }
 
 
