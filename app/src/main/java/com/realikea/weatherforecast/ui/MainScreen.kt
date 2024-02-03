@@ -82,42 +82,45 @@ import com.realikea.weatherforecast.ui.card.WindCard
 @Composable
 fun DataScreen(
     state: WeatherState,
+    modifier: Modifier
     ){
-    Column(modifier = Modifier
-        .padding(start = 16.dp, top = 15.dp, end = 16.dp)
-        .fillMaxWidth()
-        .fillMaxHeight()
-        .verticalScroll(rememberScrollState())
-    ) {
-        HeaderData(state = state,modifier = Modifier, color = MaterialTheme)
-        //Spacer(Modifier.height(25.dp))
-        Spacer(Modifier.height(14.dp))
-        Row(
+    state.weatherInfo?.let{
+        Column(
             modifier = Modifier
-                .align(Alignment.CenterHorizontally)
+                .padding(start = 16.dp, top = 1.dp, end = 16.dp)
+                .fillMaxWidth()
+                .fillMaxHeight()
+                .verticalScroll(rememberScrollState())
         ) {
-            Column(modifier = Modifier) {
-                AqiCard(
-                    modifier = Modifier,
-                    color = MaterialTheme,
-                    state = state,
-                )
-                Spacer(Modifier.height(20.dp))
-                UVindexCard(modifier = Modifier, color = MaterialTheme, state = state)
-                Spacer(Modifier.height(20.dp))
-                VisibilityCard(state = state, modifier = Modifier)
+            HeaderData(state = state, modifier = Modifier, color = MaterialTheme)
+            //Spacer(Modifier.height(25.dp))
+            Spacer(Modifier.height(14.dp))
+            Row(
+                modifier = Modifier.align(Alignment.CenterHorizontally),
+            ) {
+                Column(modifier = Modifier) {
+                    AqiCard(
+                        modifier = Modifier,
+                        color = MaterialTheme,
+                        state = state,
+                    )
+                    Spacer(Modifier.height(20.dp))
+                    UVindexCard(modifier = Modifier, color = MaterialTheme, state = state)
+                    Spacer(Modifier.height(20.dp))
+                    VisibilityCard(state = state, modifier = Modifier)
 
+                }
+                Spacer(Modifier.width(20.dp))
+                Column(modifier = Modifier) {
+                    FeelLikeCard(modifier = Modifier, color = MaterialTheme, state = state)
+                    Spacer(Modifier.height(20.dp))
+                    HumidityCard(modifier = Modifier, color = MaterialTheme, state = state)
+                    Spacer(Modifier.height(20.dp))
+                    WindCard(state = state)
+                }
             }
-            Spacer(Modifier.width(20.dp))
-            Column(modifier = Modifier) {
-                FeelLikeCard(modifier = Modifier,color = MaterialTheme, state = state)
-                Spacer(Modifier.height(20.dp))
-                HumidityCard(modifier = Modifier, color = MaterialTheme, state = state)
-                Spacer(Modifier.height(20.dp))
-                WindCard(state = state)
-            }
+            StatusBox(modifier = Modifier, vertical = Alignment.Bottom, state = state)
         }
-        StatusBox(modifier = Modifier, vertical = Alignment.Bottom, state = state)
     }
 }
 
@@ -127,6 +130,7 @@ fun DataScreen(
 fun MainScreenPreview(
 ){
     DataScreen(
+        modifier = Modifier,
         state = WeatherState(
             WeatherInfo(
             currentWeatherData = WeatherData(

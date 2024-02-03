@@ -1,58 +1,61 @@
 package com.realikea.weatherforecast.model.weather.subtype
 
+import androidx.annotation.StringRes
+import com.realikea.weatherforecast.R
+
 sealed class WindDirType(
-    val windDirection: String
+    @StringRes val windDirection: Int
 ){
     object N : WindDirType(
-        windDirection = "North"
+        windDirection = R.string.north
     )
     object NNE : WindDirType(
-        windDirection = "North-Northeast"
+        windDirection = R.string.north_northeast
     )
     object NE : WindDirType(
-        windDirection = "Northeast"
+        windDirection = R.string.northeast
     )
     object ENE : WindDirType(
-        windDirection = "East-Northeast"
+        windDirection = R.string.east_northeast
     )
     object E : WindDirType(
-        windDirection = "East"
+        windDirection = R.string.east
     )
     object ESE : WindDirType(
-        windDirection = "East-Southeast"
+        windDirection = R.string.east_southeast
     )
     object SE : WindDirType(
-        windDirection = "Southeast"
+        windDirection = R.string.southeast
     )
     object SSE : WindDirType(
-        windDirection = "South-Southwest"
+        windDirection = R.string.south_southeast
     )
     object S : WindDirType(
-        windDirection = "South"
+        windDirection = R.string.south
     )
     object SSW : WindDirType(
-        windDirection = "South-Southwest"
+        windDirection = R.string.south_southwest
     )
     object SW : WindDirType(
-        windDirection = "Southwest"
+        windDirection = R.string.southwest
     )
     object WSW : WindDirType(
-        windDirection = "West-Southwest"
+        windDirection = R.string.west_southwest
     )
     object W : WindDirType(
-        windDirection = "West"
+        windDirection = R.string.west
     )
     object WNW : WindDirType(
-        windDirection = "West-Northwest"
+        windDirection = R.string.west_northwest
     )
     object NW : WindDirType(
-        windDirection = "Northwest"
+        windDirection = R.string.northwest
     )
     object NNW : WindDirType(
-        windDirection = "North-Northwest"
+        windDirection = R.string.north_northwest
     )
     object Unknown : WindDirType(
-        windDirection = "Error"
+        windDirection = R.string.error
     )
 
     companion object{

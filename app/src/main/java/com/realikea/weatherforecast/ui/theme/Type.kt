@@ -40,7 +40,7 @@ val Typography = Typography(
     headlineSmall = TextStyle(
         fontFamily = IBMPlexSans,
         fontWeight = FontWeight.Normal,
-        fontSize = 14.sp
+        fontSize = 15.sp
     ),
     titleLarge = TextStyle(
         fontFamily = IBMPlexMono,
@@ -50,7 +50,8 @@ val Typography = Typography(
     titleMedium = TextStyle(
         fontFamily = IBMPlexMono,
         fontWeight = FontWeight.Bold,
-        fontSize = 32.sp
+        fontSize = 32.sp,
+        letterSpacing = (-2).sp
     ),
     bodyMedium = TextStyle(
         fontFamily = IBMPlexSans,

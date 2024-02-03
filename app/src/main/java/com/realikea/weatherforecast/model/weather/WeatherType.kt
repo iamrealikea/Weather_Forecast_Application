@@ -76,7 +76,7 @@ sealed class WeatherType(
         weatherDesc = "Patchy freezing drizzle possible",
         imageRes = R.drawable.freezing_dizzle
     )
-    object PatchyFrezzingNight : WeatherType(
+    object PatchyFreezingNight : WeatherType(
         weatherDesc = "Patchy freezing drizzle possible",
         imageRes = R.drawable.freezing_dizzle
     )
@@ -256,7 +256,7 @@ sealed class WeatherType(
         weatherDesc = "Patchy light snow",
         imageRes = R.drawable.light_snow_shower
     )
-    object PatchtLightSnowNight : WeatherType(
+    object PatchyLightSnowNight : WeatherType(
         weatherDesc = "Patchy light snow",
         imageRes = R.drawable.patchy_snow_night
     )
@@ -492,6 +492,51 @@ sealed class WeatherType(
                     1000 -> ClearNight
                     1003 -> PartlyCloudyNight
                     1006 -> CloudyNight
+                    1009 -> Overcast
+                    1030 -> Mist
+                    1063 -> PatchyRainNight
+                    1066 -> PatchySnowNight
+                    1069 -> PatchySleetNight
+                    1072 -> PatchyFreezingNight
+                    1087 -> ThunderyOutbreaksNight
+                    1114 -> BlowingSnowNight
+                    1117 -> BlizzardNight
+                    1135 -> FogNight
+                    1147 -> FreezingFogNight
+                    1150 -> PatchyDrizzleNight
+                    1153 -> LightDrizzleNight
+                    1168 -> FreezingDrizzleNight
+                    1171 -> HeavyFreezingDrizzleNight
+                    1180 -> PatchyLightRainNight
+                    1183 -> LightRainNight
+                    1186 -> ModerateRainATNight
+                    1189 -> ModerateRainNight
+                    1192 -> HeavyRainATNight
+                    1195 -> HeavyRainNight
+                    1198 -> LightFreezingRainNight
+                    1201 -> ModerateFreezingRainNight
+                    1204 -> LightSleetNight
+                    1207 -> ModerateSleetNight
+                    1210 -> PatchyLightSnowNight
+                    1213 -> LightSnowNight
+                    1216 -> PatchyModerateSnowNight
+                    1219 -> ModerateSnowNight
+                    1222 -> PatchyHeavySnowNight
+                    1225 -> HeavySnowNight
+                    1237 -> IcePelletsNight
+                    1240 -> LightRainShowerNight
+                    1243 -> ModerateRainShowerNight
+                    1246 -> TorrentialSleetNight
+                    1249 -> LightSleetShowerNight
+                    1252 -> ModerateSleetShowerNight
+                    1255 -> LightSnowShowerNight
+                    1258 -> ModerateSnowShowerNight
+                    1261 -> LightShowerIcePelletsNight
+                    1264 -> ModerateShowerIcePelletsNight
+                    1273 -> PatchyLightRainThunderNight
+                    1276 -> ModerateRainTstormNight
+                    1279 -> PatchySnowTstormNight
+                    1282 -> ModerateSnowTstormNight
 
                     else -> Overcast
             }

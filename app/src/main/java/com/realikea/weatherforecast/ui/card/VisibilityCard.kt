@@ -48,7 +48,7 @@ fun VisibilityCard(state: WeatherState, modifier: Modifier,) {
                         .alpha(1f)
                 )
                 Text(
-                    text = "${data.visKM} km",
+                    text = "${data.visKM} ${stringResource(R.string.km)}",
                     textAlign = TextAlign.Left,
                     style = MaterialTheme.typography.titleMedium,
                     textDecoration = TextDecoration.None,

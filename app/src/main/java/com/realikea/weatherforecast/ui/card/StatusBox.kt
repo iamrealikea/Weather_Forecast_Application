@@ -31,7 +31,8 @@ fun StatusBox(modifier: Modifier,vertical: Alignment.Vertical,state: WeatherStat
             Text(
                 text = "Update ${ data.localtime }",
                 style = MaterialTheme.typography.bodyMedium,
-                textAlign = TextAlign.End
+                textAlign = TextAlign.End,
+                color = MaterialTheme.colorScheme.onPrimaryContainer
             )
         }
     }

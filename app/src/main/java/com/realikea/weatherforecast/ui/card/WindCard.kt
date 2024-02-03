@@ -60,7 +60,7 @@ fun WindCard(
                 .height(151.dp)
                 .alpha(1f)
                 .clickable {
-                    showDialog = true
+                    showDialog = false
                 },
         ){ Column(
             modifier = Modifier
@@ -80,7 +80,7 @@ fun WindCard(
                     .padding(start = 10.dp, top = 10.dp)
                     .alpha(1f),
             )
-            Spacer(modifier = Modifier.height(5.dp))
+            Spacer(modifier = Modifier.height(3.dp))
             Column{
                 Row(
                     modifier = Modifier
@@ -95,15 +95,16 @@ fun WindCard(
                             .padding(start = 10.dp)
                             .align(Alignment.CenterVertically)
                     )
-                    Spacer(modifier = Modifier.width(10.dp))
+                    Spacer(modifier = Modifier.width(7.dp))
                     Column(
                         modifier = Modifier
                     )
                     {
                         Text(
                             text = "${data.windKph}",
-                            style = MaterialTheme.typography.titleMedium
+                            style = MaterialTheme.typography.titleMedium,
                         )
+                        Spacer(modifier = Modifier.height((-5).dp))
                         Text(
                             text = stringResource(R.string.km_hr),
                             style = MaterialTheme.typography.headlineMedium
@@ -111,11 +112,12 @@ fun WindCard(
                     }
                 }
                 Text(
-                    text = "From the ${data.windDirType.windDirection}",
+                    text = "${stringResource(R.string.from_the_dir)} ${stringResource(data.windDirType.windDirection)}",
                     style = MaterialTheme.typography.headlineSmall,
                     modifier = Modifier
                         .align(Alignment.CenterHorizontally)
-                        .padding(top = 5.dp)
+                        .padding(top = 2.dp),
+                    textAlign = TextAlign.Center
                 )
             }
             }

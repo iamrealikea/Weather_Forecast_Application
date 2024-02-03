@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">สภาพอากาศ</string>
+    <string name="uv_index_title">ดัชนี UV</string>
+    <string name="humidity_title">ความชื้น</string>
+    <string name="air_quality">Air Quality</string>
+    <string name="close">ปิด</string>
+    <string name="wind">ลม</string>
+    <string name="km_hr">กม./ชม.</string>
+    <string name="visibility">ทัศนวิศัย</string>
+    <string name="good">ยอดเยี่ยม</string>
+    <string name="moderate">ปานกลาง</string>
+    <string name="unhealthy_for_sensitive_group">ไม่ดีต่อสุขภาพสําหรับกลุ่มที่บอบบาง</string>
+    <string name="unhealthy">ไม่ดีต่อสุขภาพ</string>
+    <string name="very_unhealthy">ไม่ดีต่อสุขภาพอย่างมาก</string>
+    <string name="hazardous">อันตราย</string>
+    <string name="feel_like">รู้สึกเหมือน</string>
+    <string name="km">กม.</string>
+    <string name="north">เหนือ</string>
+    <string name="north_northeast">ตะวันออกเฉียงเหนือ</string>
+    <string name="northeast">ตะวันออกเฉียงเหนือ</string>
+    <string name="east_northeast">ตะวันออก-ตะวันออกเฉียงเหนือ</string>
+    <string name="east">ตะวันออก</string>
+    <string name="east_southeast">ตะวันออก-ตะวันออกเฉียงใต้</string>
+    <string name="southeast">ตะวันออกเฉียงใต้</string>
+    <string name="south_southeast">ตะวันออกเฉียงใต้</string>
+    <string name="south">ใต้</string>
+    <string name="south_southwest">ตะวันตกเฉียงใต้</string>
+    <string name="southwest">ทิศตะวันตกเฉียงใต้</string>
+    <string name="west_southwest">ตะวันตก-ตะวันตกเฉียงใต้</string>
+    <string name="west">ตะวันตก</string>
+    <string name="west_northwest">ตะวันตก-ตะวันตกเฉียงเหนือ</string>
+    <string name="northwest">ตะวันตกเฉียงเหนือ</string>
+    <string name="north_northwest">เหนือ-ตะวันตกเฉียงเหนือ</string>
+    <string name="from_the_dir">จากทิศ</string>
+</resources>

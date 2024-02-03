@@ -94,7 +94,7 @@ fun AqiCard(
                     style = MaterialTheme.typography.headlineSmall,
                     modifier = Modifier.align(Alignment.CenterHorizontally)
                 )
-                Text(text = data.usEpaIndexType.indexDesc,
+                Text(text = stringResource(data.usEpaIndexType.indexDesc),
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.headlineSmall,
                     modifier = Modifier.align(Alignment.CenterHorizontally))

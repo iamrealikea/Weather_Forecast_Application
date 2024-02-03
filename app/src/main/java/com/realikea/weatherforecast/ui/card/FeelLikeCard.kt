@@ -12,11 +12,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.realikea.weatherforecast.R
 import com.realikea.weatherforecast.ui.WeatherState
 
 @Composable
@@ -34,7 +36,7 @@ fun FeelLikeCard(state: WeatherState, modifier: Modifier, color: MaterialTheme){
         ) {
             Column {
                 Text(
-                    text = "Feel Like",
+                    text = stringResource(R.string.feel_like),
                     textAlign = TextAlign.Start,
                     style = MaterialTheme.typography.headlineSmall,
                     textDecoration = TextDecoration.None,
