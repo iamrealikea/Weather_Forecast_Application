@@ -9,7 +9,6 @@ import androidx.compose.ui.unit.sp
 import com.realikea.weatherforecast.R
 
 import androidx.compose.ui.text.googlefonts.GoogleFont
-import androidx.compose.ui.text.googlefonts.Font
 
 val provider = GoogleFont.Provider(
     providerAuthority = "com.google.android.gms.fonts",
@@ -25,8 +24,7 @@ val bodyFontFamily = FontFamily(
 
 val displayFontFamily = FontFamily(
     Font(R.font.ibmplexmono_regular),
-    Font(R.font.ibmplexmono_bold, FontWeight.Bold),
-    Font(R.font.ibmplexmono_medium, FontWeight.Medium)
+    Font(R.font.ibmplexmono_bold, FontWeight.Bold)
 )
 
 // Default Material 3 typography values
